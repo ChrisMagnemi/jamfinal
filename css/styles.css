@@ -59,3 +59,21 @@ nav ul a {
   width: 60%;
   padding: 1rem;
 }
+
+.ajax .content > div {
+  /* > selector selects only the first child, so here only the immediate child div */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* results in 3 felxible columns */
+  grid-gap: 1rem;
+}
+
+.ajax .item {
+  border-bottom: 1px dotted #aaa;
+}
+
+.ajax .item a:link,
+.ajax .item a:visited,
+.ajax .item a:hover,
+.ajax .item a:active {
+  color: #000;
+}
