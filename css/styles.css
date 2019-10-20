@@ -77,3 +77,6 @@ nav ul a {
 .ajax .item a:active {
   color: #000;
 }
+.homegit .content img {
+  width: 50%;
+}
