@@ -10,9 +10,9 @@
   <body class="{{ pageClass }}">
     <nav>
       <ul>
-        {%- for post in collections.post -%}
+        {%- for page in collections.page -%}
         <li>
-          <a href="{{ post.url | url }}">{{ post.data.navTitle }}</a>
+          <a href="{{ page.url | url }}">{{ page.data.navTitle }}</a>
         </li>
         {%- endfor -%}
       </ul>

@@ -2,7 +2,7 @@
 layout: layout.html
 pageTitle: Contact Us
 navTitle: Contact
-tags: post
+tags: page
 pageClass: contact
 ---
 

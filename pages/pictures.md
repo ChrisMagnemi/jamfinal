@@ -2,7 +2,7 @@
 layout: layout.html
 pageTitle: Apples
 navTitle: Pictures
-tags: post
+tags: page
 images:
   - apples.png
   - apples-red.png

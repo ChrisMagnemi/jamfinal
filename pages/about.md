@@ -1,6 +1,6 @@
 ---
 layout: layout.html
-tags: post
+tags: page
 pageTitle: About Us
 navTitle: About
 ---
