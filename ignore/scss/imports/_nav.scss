@@ -1,0 +1,14 @@
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+nav ul a {
+  padding: 0.5rem 1rem;
+}
+.nav-item-active a {
+  color: #fff;
+  background-color: #007eb6;
+  border-radius: 4px;
+}

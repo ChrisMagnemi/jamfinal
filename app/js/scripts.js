@@ -11,10 +11,8 @@ var github = 'https://api.github.com/users/ChrisMagnemi';
 function clickHandlers() {
   if (document.body.classList == 'ajax') {
     getData(nyt);
-    console.log('nyt');
   } else if (document.body.classList == 'homegit') {
     getData(github);
-    console.log('git');
   } else {
     return;
   }
