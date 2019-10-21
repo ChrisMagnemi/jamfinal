@@ -2,15 +2,7 @@
 <html lang="en">
   {% include components/head.html %}
   <body class="{{ pageClass }}">
-    <nav>
-      <ul>
-        {%- for page in collections.page -%}
-        <li>
-          <a href="{{ page.url | url }}">{{ page.data.navTitle }}</a>
-        </li>
-        {%- endfor -%}
-      </ul>
-    </nav>
+    {% include components/nav.html %}
 
     <div class="content">
       <h1>{{ pageTitle }}</h1>
