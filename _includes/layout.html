@@ -2,7 +2,7 @@
 <html lang="en">
   {% include components/head.html %}
   <body class="{{ pageClass }}">
-    <nav>
+    <!-- <nav>
       <ul>
         {%- for page in collections.page -%}
         <li>
@@ -10,7 +10,8 @@
         </li>
         {%- endfor -%}
       </ul>
-    </nav>
+    </nav> -->
+    {% include components/nav.html %}
 
     <div class="content">
       <h1>{{ pageTitle }}</h1>

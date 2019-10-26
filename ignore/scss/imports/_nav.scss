@@ -1,7 +1,13 @@
 nav ul {
-  padding: 0;
+  display: none;
   list-style: none;
-  display: flex;
+  background-color: $link;
+  @media (min-width: $break-med) {
+    display: flex;
+    justify-content: space-around;
+    background: $link;
+    text-align: center;
+  }
 }
 
 nav ul a {
@@ -11,4 +17,54 @@ nav ul a {
   color: #fff;
   background-color: #007eb6;
   border-radius: 4px;
+}
+nav li {
+  &:hover:not(.active) {
+    background-color: lighten($link, 10%);
+  }
+  @media (min-width: $break-med) {
+    flex-grow: 1;
+  }
+}
+nav a {
+  padding: 1rem;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  &:hover {
+    text-decoration: none;
+  }
+}
+nav .active {
+  background-color: darken($link, 10%);
+}
+
+nav .active a {
+  font-weight: bold;
+}
+#pull {
+  display: block;
+  background-color: $link;
+  height: 48px;
+  padding-top: 12px;
+  padding-left: 12px;
+  @media (min-width: $break-med) {
+    display: none;
+  }
+}
+
+#pull::after {
+  content: '';
+  background: url(../img/nav-icon.png) no-repeat;
+  width: 22px;
+  height: 22px;
+  background-size: cover;
+  display: inline-block;
+}
+.show-nav nav ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
 }
