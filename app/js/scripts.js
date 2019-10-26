@@ -9,12 +9,17 @@ var nyt =
 var github = 'https://api.github.com/users/ChrisMagnemi';
 
 function clickHandlers() {
+  console.log('click');
   if (document.body.classList == 'ajax') {
     getData(nyt);
   } else if (document.body.classList == 'homegit') {
     getData(github);
   } else {
-    return;
+  }
+  if (event.target.matches('#pull')) {
+    console.log(event.target);
+    document.querySelector('body').classList.toggle('show-nav');
+    event.preventDefault();
   }
 }
 

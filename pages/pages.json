@@ -1,4 +1,7 @@
 {
+<<<<<<< HEAD
   "layout": "layouts/layout.html",
+=======
+>>>>>>> dev
   "tags": ["pages", "nav"]
 }
