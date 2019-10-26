@@ -16,10 +16,10 @@ function clickHandlers() {
     getData(github);
   } else {
   }
-  if (event.target.matches('#pull')) {
+  if (event.target.closest('#pull')) {
     console.log(event.target);
     document.querySelector('body').classList.toggle('show-nav');
-    event.preventDefault();
+    // event.preventDefault();
   }
 }
 
